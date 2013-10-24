@@ -23,5 +23,5 @@ if __name__ == "__main__":
     length = int(sys.argv[2])
 
     csvwriter = csv.writer(open(naca_code+'.csv','wb'))
-    for x in xrange(1,length,1):
+    for x in xrange(0,length,1):
       csvwriter.writerow([x, sym_naca(x, length, naca_code)])
